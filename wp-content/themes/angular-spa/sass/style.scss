@@ -44,10 +44,6 @@ $white: #fff;
 	}
 }
 
-span.odometer-formatting-mark {
-    color: black;
-}
-
 
 .testimonials-slider {
 	.slick-slide {
@@ -199,6 +195,11 @@ footer {
 	li {
 		float: left;
 		list-style-type: none;
+	}
+}
+.social  {
+	ul {
+		padding: 0;
 	}
 }
 
@@ -531,13 +532,23 @@ a.header-num {
     	background: $blue;
     }
     .stats {
+    	position: absolute;
+    	bottom: 0;
+    	padding: 40px 0 0 0;
+    	[class^="icon-"], [class*=" icon-"] {
+    		display: block;
+    		font-size: 50px!important;
+    		margin-bottom: 20px;
+    	}
     	background: rgba( 36, 36, 36, .9);
+    	i {
 
+    	}
     }
     li {
     	float: left;
     	text-align: center;
-    	width: 145px;
+    	width: 173px;
     	margin-right: 65px;
     	&:last-child {
     		margin-right: 0;
@@ -551,7 +562,7 @@ a.header-num {
 		width: 45px;
 		height: 2px;
 		display: block;
-    		margin: 0 auto;
+    		margin: 20px auto;
     	}
     	p {
     		font-family: $font-bold;
@@ -560,7 +571,7 @@ a.header-num {
     }
     img {
     	position: absolute;
-    	top: 0;
+    	bottom: 0;
     	left: 0;
     }
     > *:not(img) {

@@ -6,24 +6,28 @@
 		<a href="" class="button">Our values</a>
 
 		<div class="columns large-12 stats">
-			<div class="columns large-7 large-centered">
+			<div class="columns large-8 large-centered">
 				<ul class="no-bullet">
 					<li>
+						<span class="icon-house-icon"></span>
 						<span class="num ">$<span class="odometer loans">0</span> Billion</span>
 						<i></i>
 						<p>Loans Funded</p>
 					</li>
 					<li>
+						<span class="icon-family-icon"></span>
 						<span class="num "><span class="odometer clients">0 </span>+</span>
 						<i></i>
 						<p>Happy clients</p>
 					</li>
 					<li>
+						<span class="icon-employee-icon"></span>
 						<span class="num "><span class="odometer employees">0</span></span>
 						<i></i>
 						<p>Employees</p>
 					</li>
 					<li>
+						<span class="icon-location-icon"></span>
 						<span class="num "><span class="odometer states">0</span></span>
 						<i></i>
 						<p>States Licensed</p>
