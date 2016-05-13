@@ -186,6 +186,13 @@ footer {
 			padding-right: 0;
 		}
 	}
+	.social li {
+	    display: inline-block;
+	    a {
+	    	color: $blue;
+	    	font-size: 30px;
+	    }
+	}
 }
 
 .social-icons {
@@ -198,6 +205,13 @@ footer {
 .copyright {
 	background: #131313;
 	padding-bottom: 40px;
+	small {
+		font-family: $font-light;
+		color: #6d6e70;
+		font-size: 15px;
+		margin-top: 10px;
+		display: block;
+	}
 }
 .legal {
 	font-size: 15px;
@@ -579,7 +593,7 @@ a.header-num {
 	}
 }
 
-.columns.large-12.footer-main {
+.footer-main {
     padding: 65px 0 0 0;
 }
 
@@ -601,4 +615,23 @@ a.header-num {
 			margin-top: 20px;
 		}
 	}
+}
+
+.pbs, .pvs {
+    padding-bottom: .25em;
+}
+.bshadow0, input {
+    box-shadow: inset 0 -2px #e7e7e7;
+}
+.fs1 {
+    font-size: 32px;
+}
+.glyph {
+    font-size: 16px;
+    width: 15em;
+    padding-bottom: 1em;
+    margin-right: 4em;
+    margin-bottom: 1em;
+    float: left;
+    overflow: hidden;
 }

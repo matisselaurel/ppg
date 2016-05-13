@@ -21,13 +21,14 @@ var paramountDefault = (function($) {
 			$(document).foundation();
 			$('.forward-thinking-slider').slick({
 				slidesToShow: 2,
-  				slidesToScroll: 1,
+  				slidesToScroll: 1
 			});
 
 			$('.testimonials-slider').slick({
 				slidesToShow: 1,
   				slidesToScroll: 1,
-				arrows: false
+				arrows: false,
+				autoplay: true
 			});
 
 

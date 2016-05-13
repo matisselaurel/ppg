@@ -164,10 +164,15 @@ add_action( 'wp_enqueue_scripts', array( $ngTheme, 'enqueue_scripts') );
 //add_action( 'rest_api_init', array( $ngTheme, 'my_awesome_route' ) );
 //add_theme_support( 'post-thumbnails' );
 
-function register_my_menu() {
+function register_main_menu() {
 	  register_nav_menu('primary-menu',__( 'Main Menu' ));
 }
-add_action( 'init', 'register_my_menu' );
+add_action( 'init', 'register_main_menu' );
+
+function register_footer_menu() {
+	  register_nav_menu('footer-menu',__( 'Footer Menu' ));
+}
+add_action( 'init', 'register_footer_menu' );
 
 function loadParamountJs() {
     echo '<script type="text/javascript" src="http://dev.ppg.local/wp-content/themes/angular-spa/assets/js/paramountDefault.js"></script>';

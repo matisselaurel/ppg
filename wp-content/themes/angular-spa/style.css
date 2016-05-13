@@ -6413,6 +6413,13 @@ footer {
 .legal-links li:last-child {
   padding-right: 0;
 }
+.legal-links .social li {
+  display: inline-block;
+}
+.legal-links .social li a {
+  color: #144a92;
+  font-size: 30px;
+}
 
 .social-icons li {
   float: left;
@@ -6422,6 +6429,13 @@ footer {
 .copyright {
   background: #131313;
   padding-bottom: 40px;
+}
+.copyright small {
+  font-family: "Centuma-Light";
+  color: #6d6e70;
+  font-size: 15px;
+  margin-top: 10px;
+  display: block;
 }
 
 .legal {
@@ -6784,7 +6798,7 @@ a.header-num {
   background: #2883eb;
 }
 
-.columns.large-12.footer-main {
+.footer-main {
   padding: 65px 0 0 0;
 }
 
@@ -6805,4 +6819,26 @@ a.header-num {
 }
 .footer-links a:first-of-type {
   margin-top: 20px;
+}
+
+.pbs, .pvs {
+  padding-bottom: .25em;
+}
+
+.bshadow0, input {
+  box-shadow: inset 0 -2px #e7e7e7;
+}
+
+.fs1 {
+  font-size: 32px;
+}
+
+.glyph {
+  font-size: 16px;
+  width: 15em;
+  padding-bottom: 1em;
+  margin-right: 4em;
+  margin-bottom: 1em;
+  float: left;
+  overflow: hidden;
 }
