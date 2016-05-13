@@ -52,15 +52,36 @@
 			</div>
 	</div>
 		</main><!-- END FLUID CONTAINER -->
-
-		<footer class="footer columns large-12">
-			<div class="container">
+<div class="columns large-12 expert">
+	<a href="">Speak to an Expert</a> <span>or Call us at</span> <a href="">(877) 290-9991</a>
+</div>
+<div class="columns large-12 logos">
+<ul class="no-bullets">
+	<li><img src="<?php bloginfo('template_directory') ?>/images/badge-equal-housing.jpg" alt=""></li>
+	<li><img src="<?php bloginfo('template_directory') ?>/images/badge-trustpilot.png" alt=""></li>
+	<li><img src="<?php bloginfo('template_directory') ?>/images/badge-bbb.jpg" alt=""></li>
+	<li><img src="<?php bloginfo('template_directory') ?>/images/badge-pbj.jpg" alt=""></li>
+</ul>
+</div>
+		<footer class="footer columns large-12 no-padding">
+			<div class="footer-main">
 				<div class="row">
-					<div class="col-sm-12 text-center">
-						<p>
-							&copy; <?php echo Date('Y'); ?>
-						</p>
+					<div class="contact-info">
+						<span class="contact-header">CONTACT US</span>
 					</div>
+					<div class="footer-links">
+
+					</div>
+				</div>
+			</div>
+			<div class="legal-links">
+				<div class="row">
+
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="row">
+					<p>Copyright &copy; 2003-<?php echo Date('Y'); ?> Paramount Equity Mortgage®. All Rights Reserved.</p>
 				</div>
 			</div>
 		</footer>
