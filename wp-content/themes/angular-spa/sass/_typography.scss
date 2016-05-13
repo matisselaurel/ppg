@@ -1,0 +1,80 @@
+$fontLoc: 'fonts/';
+
+@font-face {
+  font-family: 'Centuma-Thin';
+  src:  url('#{$fontLoc}Centuma-Thin.otf')  format('opentype'),
+  	url('#{$fontLoc}Centuma-Thin.eot') format('embedded-opentype'),
+  	url('#{$fontLoc}Centuma-Thin.woff') format('woff'),
+  	url('#{$fontLoc}Centuma-Thin.ttf')  format('truetype'),
+  	url('#{$fontLoc}Centuma-Thin.svg#Centuma-Thin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Centuma-Light';
+  src: url('#{$fontLoc}Centuma-Light.eot') format('embedded-opentype'),
+  	url('#{$fontLoc}Centuma-Light.otf')  format('opentype'),
+  	url('#{$fontLoc}Centuma-Light.woff') format('woff'),
+  	url('#{$fontLoc}Centuma-Light.ttf')  format('truetype'),
+  	url('#{$fontLoc}Centuma-Light.svg#Centuma-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Centuma';
+  src:  url('#{$fontLoc}Centuma.otf')  format('opentype'),
+	url('#{$fontLoc}Centuma.eot') format('embedded-opentype'),
+	url('#{$fontLoc}Centuma.woff') format('woff'),
+	url('#{$fontLoc}Centuma.ttf')  format('truetype'),
+	url('#{$fontLoc}Centuma.svg#Centuma') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Centuma-Bold';
+  src:  url('#{$fontLoc}Centuma-Bold.otf')  format('opentype'),
+  	url('#{$fontLoc}Centuma-Bold.eot') format('embedded-opentype'),
+	url('#{$fontLoc}Centuma-Bold.woff') format('woff'),
+	url('#{$fontLoc}Centuma-Bold.ttf')  format('truetype'),
+	url('#{$fontLoc}Centuma-Bold.svg#Centuma-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neutraface2Bold';
+  src: url('#{$fontLoc}Neutra2Text-Bold.eot'); /* IE9 Compat Modes */
+  src: url('#{$fontLoc}Neutra2Text-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('#{$fontLoc}Neutra2Text-Bold.woff') format('woff'), /* Modern Browsers */
+       url('#{$fontLoc}Neutra2Text-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('#{$fontLoc}Neutra2Text-Bold.svg#e5bebe314e929cdf22abdf4bbfb62856') format('svg'); /* Legacy iOS */
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+    font-family: 'paramount-icons';
+    src:    url('#{$fontLoc}paramount-icons.eot?vktnb');
+    src:    url('#{$fontLoc}paramount-icons.eot?vktnb#iefix') format('embedded-opentype'),
+        url('#{$fontLoc}paramount-icons.ttf?vktnb') format('truetype'),
+        url('#{$fontLoc}paramount-icons.woff?vktnb') format('woff'),
+        url('#{$fontLoc}paramount-icons.svg?vktnb#paramount-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+$font: 'Centuma';
+$font-thin: 'Centuma-Thin';
+$font-light: 'Centuma-Light';
+$font-bold: 'Centuma-Bold';
+$font-link: 'Neutraface2Bold';
+
+
