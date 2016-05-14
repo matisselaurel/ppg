@@ -41,7 +41,12 @@
 		</div>
 	</div> -->
 
-	<div class="columns large-12 blog">
+
+		</main><!-- END FLUID CONTAINER -->
+
+
+
+<div class="columns large-12 blog">
 		<span class="header">Forward Thinking Articles</span>
 
 		<?php query_posts( 'category_name=forward-thinking&posts_per_page=10' ); ?>
@@ -59,7 +64,6 @@
 				<?php endwhile; ?>
 			</div>
 	</div>
-		</main><!-- END FLUID CONTAINER -->
 <div class="columns large-12 expert">
 	<a href="">Speak to an Expert</a> <span>or Call us at</span> <a href="">(877) 290-9991</a>
 </div>
@@ -141,27 +145,8 @@
 				<div class="row">
 
 <?php
-			$footer = array(
-					'theme_location'  => '',
-					'menu'            => 'Footer Menu',
-					'container'       => 'nav',
-					'container_class' => 'columns large-8 no-padding',
-					'container_id'    => '',
-					'menu_class'      => 'dropdown menu no-bullet',
-					'menu_id'         => '',
-					'echo'            => true,
-					'fallback_cb'     => 'wp_page_menu',
-					'before'          => '',
-					'after'           => '',
-					'link_before'     => '',
-					'link_after'      => '',
-					'items_wrap'      => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
-					'depth'           => 0,
-					'walker' => new Foundation_Walker_Nav_Menu
-				);
-
-			 wp_nav_menu( $footer );
-
+			global $legalNavOptions;
+			 wp_nav_menu( $legalNavOptions );
 ?>
 				<div class="columns large-4 social">
 					<ul class="no-bullet">

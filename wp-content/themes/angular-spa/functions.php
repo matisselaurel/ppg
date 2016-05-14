@@ -1,4 +1,43 @@
 <?php
+
+$headerNavOptions = array(
+	'theme_location'  => '',
+	'menu'            => 'Main Menu',
+	'container'       => 'nav',
+	'container_class' => 'columns large-8 no-padding',
+	'container_id'    => '',
+	'menu_class'      => 'dropdown menu no-bullet',
+	'menu_id'         => '',
+	'echo'            => true,
+	'fallback_cb'     => 'wp_page_menu',
+	'before'          => '',
+	'after'           => '',
+	'link_before'     => '',
+	'link_after'      => '',
+	'items_wrap'      => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
+	'depth'           => 0,
+	'walker' => new Foundation_Walker_Nav_Menu
+);
+
+$legalNavOptions = array(
+	'theme_location'  => '',
+	'menu'            => 'Footer Menu',
+	'container'       => 'nav',
+	'container_class' => 'columns large-8 no-padding',
+	'container_id'    => '',
+	'menu_class'      => 'dropdown menu no-bullet',
+	'menu_id'         => '',
+	'echo'            => true,
+	'fallback_cb'     => 'wp_page_menu',
+	'before'          => '',
+	'after'           => '',
+	'link_before'     => '',
+	'link_after'      => '',
+	'items_wrap'      => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
+	'depth'           => 0,
+	'walker' => new Foundation_Walker_Nav_Menu
+);
+
 class Foundation_Walker_Nav_Menu extends Walker_Nav_Menu {
 
 	function start_lvl( &$output, $depth ) {
@@ -47,7 +86,7 @@ class Foundation_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$item_output = $args->before;
 		$item_output .= '<a'. $attributes .'>';
 		$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
-		$item_output .= ($args->has_children) ? ' <b class="caret"></b> ' : '';
+		$item_output .= ($args->has_children) ? ' <i class="fa fa-angle-down"></i> ' : '';
 		$item_output .= '</a>';
 		$item_output .= $args->after;
 		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
@@ -95,7 +134,7 @@ class Foundation_Walker_Nav_Menu extends Walker_Nav_Menu {
 class wp_ng_theme {
 
 	function enqueue_scripts() {
-		wp_enqueue_style( 'bootstrapCSS', 'https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css', array(), '1.0', 'all' );
+		//wp_enqueue_style( 'bootstrapCSS', 'https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css', array(), '1.0', 'all' );
 
 		wp_enqueue_script( 'angular-core', 'https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js', array( 'jquery' ), '1.0', false );
 

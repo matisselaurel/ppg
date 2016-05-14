@@ -28,10 +28,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "slick";
 @import "slick-theme";
 @import "odometer";
+@import "font-awesome";
 
 $blue: #144a92;
 $blue-hover: #2883eb;
 $white: #fff;
+
 
 
 .header .logo-link {
@@ -221,9 +223,32 @@ footer {
 	font-family: $font-light;
 }
 .header .top {
-	border-bottom: 1px solid white;
+
 	height: 110px;
 	position: relative;
+}
+.sticky {
+	border-bottom: 1px solid white;
+}
+.sticky.is-stuck {
+
+	background: $blue;
+	.icon-logo {
+		display: none;
+	}
+
+	.top {
+		height: 50px;
+		a.logo-link {
+			margin-top: 8px;
+		}
+		a.header-num {
+			margin-top: 15px;
+		}
+		nav {
+			margin-top: 8px;
+		}
+	}
 }
 
 .header {
@@ -237,7 +262,7 @@ footer {
 }
 
 a.logo-link {
-    margin-top: 25px;
+    margin-top: 43px;
     float: left;
 }
 
@@ -295,7 +320,7 @@ a.logo-link {
 }
 
 a.header-num {
-    margin-top: 45px;
+    margin-top: 55px;
     margin-left: 40px;
     float: left;
     font-size: 14px;
@@ -356,7 +381,7 @@ a.header-num {
 
 .header nav {
 	right: 0;
-	top: 35%;
+	margin-top: 48px;
 	.no-bullet li {
 		list-style-type: none;
 	}
