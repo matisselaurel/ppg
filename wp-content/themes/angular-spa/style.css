@@ -6633,10 +6633,23 @@ a.header-num {
 .approach > p {
   font-size: 30px;
 }
+.approach i {
+  color: #144a92;
+  font-size: 40px;
+}
 .approach .header {
   color: #144a92;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Centuma-Bold";
+}
+.approach .icon-wrapper {
+  width: 18%;
+  padding-right: 2%;
+  float: left;
+}
+.approach .content-wrapper {
+  width: 78%;
+  float: left;
 }
 .approach .large-4 p {
   font-size: 14px;
@@ -6649,6 +6662,14 @@ a.header-num {
   background: #144a92;
   text-transform: uppercase;
   margin-top: 45px;
+}
+.approach .refinance-btn i {
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
+  float: left;
+  padding-left: 15px;
+  margin-top: -2px;
 }
 
 .blog {

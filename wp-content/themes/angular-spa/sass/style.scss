@@ -419,10 +419,23 @@ a.header-num {
     > p {
 	font-size: 30px;
     }
+    i {
+	color: #144a92;
+	font-size: 40px;
+    }
     .header {
     	color: $blue;
-    	font-size: 20px;
+    	font-size: 18px;
     	font-family: $font-bold;
+    }
+    .icon-wrapper {
+    	width: 18%;
+    	padding-right: 2%;
+    	float: left;
+    }
+    .content-wrapper {
+	width: 78%;
+	float: left;
     }
     .large-4 {
     	p {
@@ -437,6 +450,15 @@ a.header-num {
     	background: $blue;
     	text-transform: uppercase;
     	margin-top: 45px;
+
+    	i {
+		font-size: 16px;
+		line-height: 16px;
+		color: $white;
+		float: left;
+		padding-left: 15px;
+    		margin-top: -2px;
+    	}
     }
 }
 .blog {

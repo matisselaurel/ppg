@@ -9,6 +9,13 @@ class Foundation_Walker_Nav_Menu extends Walker_Nav_Menu {
 
 	}
 	function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+// echo '<pre>';
+// 	print_r($item);
+// echo '</pre>';
+
+
+
+
 		$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
 		$li_attributes = '';
 		$class_names = $value = '';
@@ -35,7 +42,7 @@ class Foundation_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$attributes .= ! empty( $item->url ) ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
 		//$attributes .= ! empty( $item->url ) ? ' ui-sref="detail({id: post.'.$item->ID.'})"' : '';
 		//echo ' ui-sref="detail({id: post.'.$item->ID.'})"';
-		$attributes .= ( strtolower($item->type_label) == 'page' ? 'ui-sref="pagedetail({id: '. $item->ID .'})"': 'ui-sref="detail({id: '. $item->ID .'})"');
+		$attributes .= ( strtolower($item->type_label) == 'page' ? 'ui-sref="pagedetail({id: '. $item->object_id .'})"': 'ui-sref="detail({id: '. $item->ID .'})"');
 		$attributes .= ($args->has_children) ? ' class="dropdown-toggle" data-toggle="dropdown"' : '';
 		$item_output = $args->before;
 		$item_output .= '<a'. $attributes .'>';
@@ -162,7 +169,7 @@ add_action( 'wp_enqueue_scripts', array( $ngTheme, 'enqueue_scripts') );
 
 //add_action( 'rest_api_init', array( $ngTheme, 'register_new_field' ) );
 //add_action( 'rest_api_init', array( $ngTheme, 'my_awesome_route' ) );
-//add_theme_support( 'post-thumbnails' );
+add_theme_support( 'post-thumbnails' );
 
 function register_main_menu() {
 	  register_nav_menu('primary-menu',__( 'Main Menu' ));
@@ -188,6 +195,10 @@ function loadSlick() {
 add_action('wp_footer', 'loadSlick', 100);
 add_action('wp_footer', 'loadParamountJs', 101);
 
+// Allow html tags on post/page content
+remove_filter('the_content', 'wp_filter_kses');
 
+// remove wp's automatic line breaks
+remove_filter( 'the_content', 'wpautop' );
 
 ?>

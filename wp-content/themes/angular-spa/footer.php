@@ -1,42 +1,46 @@
-
-	<div class="columns large-12 customer-service no-padding">
-
-		<h3>We work to build<br> lifelong relationships.</h3>
-		<p>We know that circumstances change and dreams evolve, and we want to be there for you when they do. </p>
-		<a href="" class="button">Our values</a>
-
-		<div class="columns large-12 stats">
-			<div class="columns large-8 large-centered">
-				<ul class="no-bullet">
-					<li>
-						<span class="icon-house-icon"></span>
-						<span class="num ">$<span class="odometer loans">0</span> Billion</span>
-						<i></i>
-						<p>Loans Funded</p>
-					</li>
-					<li>
-						<span class="icon-family-icon"></span>
-						<span class="num "><span class="odometer clients">0 </span>+</span>
-						<i></i>
-						<p>Happy clients</p>
-					</li>
-					<li>
-						<span class="icon-employee-icon"></span>
-						<span class="num "><span class="odometer employees">0</span></span>
-						<i></i>
-						<p>Employees</p>
-					</li>
-					<li>
-						<span class="icon-location-icon"></span>
-						<span class="num "><span class="odometer states">0</span></span>
-						<i></i>
-						<p>States Licensed</p>
-					</li>
-				</ul>
-			</div>
+<!-- <div class="columns large-12 approach no-padding">
+		<div class="columns large-5 no-padding">
+			<img src="http://dev.ppg.local/wp-content/themes/angular-spa/images/approach-couple.jpg" alt="Happy couple gazing out into the distance">
 		</div>
-		<img src="http://dev.ppg.local/wp-content/themes/angular-spa/images/customer-service.jpg" alt="">
-	</div>
+		<div class="columns large-7">
+			<h2>Forward thinking begins here</h2>
+			<p>Whether you’re a first time home buyer, refinancing a loan, or consolidating debt, Paramount can bring your dreams home. You'll find our loan process to be friendly, fully transparent, and forward thinking:</p>
+			<div class="columns large-4 no-padding">
+				<div class="icon-wrapper">
+					<i class="icon-people-icon"></i>
+				</div>
+				<div class="content-wrapper">
+					<span class="header">We Put People First</span>
+					<p>While other firms let their technology do the talking, we always put people first. That means we'll work with you one-on-one, through every step of the loan process, to provide peace of mind. </p>
+				</div>
+			</div>
+			<div class="columns large-4 no-padding">
+				<div class="icon-wrapper">
+					<i class="icon-money-icon"></i>
+				</div>
+				<div class="content-wrapper">
+					<span class="header">No Upfront Lender Fees</span>
+					<p>We underwrite loans up front and don't charge lender fees, so you'll never have any unpleasant surprises. You'll know that you’re approved and exactly what we need from the beginning.</p>
+				</div>
+			</div>
+			<div class="columns large-4 no-padding">
+				<div class="icon-wrapper">
+					<i class="icon-heart-icon"></i>
+				</div>
+				<div class="content-wrapper">
+					<span class="header">Lasting Relationships</span>
+					<p>We know circumstances change and dreams evolve, so we work to build lifelong relationships. We hope to be your first choice for your next mortgage or refinance.</p>
+				</div>
+			</div>
+			<div class="row expanded">
+				<div class="columns large-12">
+					<a href="#" class="button refinance-btn"> <i class="icon-btn-icon"></i> Refinance now</a>
+				</div>
+			</div>
+
+		</div>
+	</div> -->
+
 	<div class="columns large-12 blog">
 		<span class="header">Forward Thinking Articles</span>
 
