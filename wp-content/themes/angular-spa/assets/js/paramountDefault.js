@@ -32,46 +32,45 @@ var paramountDefault = (function($) {
 				this._customerService();
 			}
 
-			$('.compile').bind('DOMSubtreeModified', function() {
-console.log('modified');
-				this._compileAngularElement($('.compile'));
-			});
-
-var s_ajaxListener = new Object();
-s_ajaxListener.tempOpen = XMLHttpRequest.prototype.open;
-s_ajaxListener.tempSend = XMLHttpRequest.prototype.send;
-s_ajaxListener.callback = function () {
-  // this.method :the ajax method used
-  // this.url    :the url of the requested script (including query string, if any) (urlencoded)
-  // this.data   :the data sent, if any ex: foo=bar&a=b (urlencoded)
-  setTimeout(function(){
-  	paramountDefault._testimonials();
-  }, 500);
-
-}
-
-XMLHttpRequest.prototype.open = function(a,b) {
-  if (!a) var a='';
-  if (!b) var b='';
-  s_ajaxListener.tempOpen.apply(this, arguments);
-  s_ajaxListener.method = a;
-  s_ajaxListener.url = b;
-  if (a.toLowerCase() == 'get') {
-    s_ajaxListener.data = b.split('?');
-    s_ajaxListener.data = s_ajaxListener.data[1];
-
-  }
-}
-
-XMLHttpRequest.prototype.send = function(a,b) {
-  if (!a) var a='';
-  if (!b) var b='';
-  s_ajaxListener.tempSend.apply(this, arguments);
-  if(s_ajaxListener.method.toLowerCase() == 'post')s_ajaxListener.data = a;
-  s_ajaxListener.callback();
-}
+			this._bind();
 
 
+
+		},
+		_bind: function() {
+			var s_ajaxListener = new Object();
+			s_ajaxListener.tempOpen = XMLHttpRequest.prototype.open;
+			s_ajaxListener.tempSend = XMLHttpRequest.prototype.send;
+			s_ajaxListener.callback = function () {
+			  // this.method :the ajax method used
+			  // this.url    :the url of the requested script (including query string, if any) (urlencoded)
+			  // this.data   :the data sent, if any ex: foo=bar&a=b (urlencoded)
+			  setTimeout(function(){
+			  	paramountDefault._testimonials();
+			  }, 250);
+
+			}
+
+			XMLHttpRequest.prototype.open = function(a,b) {
+			  if (!a) var a='';
+			  if (!b) var b='';
+			  s_ajaxListener.tempOpen.apply(this, arguments);
+			  s_ajaxListener.method = a;
+			  s_ajaxListener.url = b;
+			  if (a.toLowerCase() == 'get') {
+			    s_ajaxListener.data = b.split('?');
+			    s_ajaxListener.data = s_ajaxListener.data[1];
+
+			  }
+			}
+
+			XMLHttpRequest.prototype.send = function(a,b) {
+			  if (!a) var a='';
+			  if (!b) var b='';
+			  s_ajaxListener.tempSend.apply(this, arguments);
+			  if(s_ajaxListener.method.toLowerCase() == 'post')s_ajaxListener.data = a;
+			  s_ajaxListener.callback();
+			}
 		},
 		_compileAngularElement: function( el ) {
 			var el = (typeof el == 'string') ? el : null ;
@@ -93,21 +92,14 @@ XMLHttpRequest.prototype.send = function(a,b) {
 			this._testimonials();
 		},
 		_testimonials: function() {
-
-
-			$('.testimonials-slider').slick({
-				slidesToShow: 1,
-  				slidesToScroll: 1,
-				arrows: false,
-				autoplay: true
-			});
-
-
-
-
-			console.log('called paramountDefault.testimonials');
-			console.log( $('.testimonials-slider') );
-			console.log( $('.testimonials-slider').length );
+			//if($('.testimonials-slider').length) {
+				$('.testimonials-slider').slick({
+					slidesToShow: 1,
+	  				slidesToScroll: 1,
+					arrows: false,
+					autoplay: true
+				});
+			//}
 		},
 		_customerService: function () {
 			var loans = document.querySelector('.loans');

@@ -16,14 +16,19 @@
     <base href="/">
 </head>
 <body <?php body_class(); ?>>
-<header class="container header">
-	<!-- <img src="<?php bloginfo('template_url'); ?>/images/home-banner.jpg" alt=""> -->
-<div class="row">
-	<div class="columns large-12">
-		<?php layerslider(1, 'homepage'); ?>
-	</div>
 
-</div>
+<header class="container header" id="header" data-sticky-container>
+	<div id="stickhere"></div>
+<div class=" title-bar columns large-12" data-anchor="header" data-sticky data-options="anchore: stickhere; marginTop:0;" style="width:100%" data-top-anchor="1" data-btm-anchor="content:bottom">
+
+
+	<!-- <img src="<?php bloginfo('template_url'); ?>/images/home-banner.jpg" alt=""> -->
+	<div class="row">
+		<div class="columns large-12">
+			<?php layerslider(1, 'homepage'); ?>
+		</div>
+
+	</div>
 	<div class="columns large-12 top">
 		<div class="columns large-4 logo">
 			<a ui-sref="pagedetail({id: <?php echo get_option('page_on_front'); ?>})" class="logo-link"> <i class="icon-paramount-icon-logo"></i> <i class="icon-logo"></i> </a>
@@ -66,7 +71,7 @@
 		<h1>Thinking Forward To <br> Make You Feel at Home</h1>
 		<a class="button" href="">Our Mission</a>
 	</div> -->
-
+	</div>
 </header>
 
 

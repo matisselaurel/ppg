@@ -1,4 +1,3 @@
-
 /*!
 Theme Name: Paramount Equity
 Theme URI: http://underscores.me/
@@ -610,6 +609,11 @@ a.header-num {
 .blog {
 	height: 500px;
 }
+.test {
+	width: 100%;
+	height: 50px;
+	background: red;
+}
 
 #menu-main-menu li {
 
@@ -623,6 +627,12 @@ a.header-num {
 		&:hover {
 			background: #2883eb;
 		}
+		&:last-child {
+			background: transparent;
+		}
+	}
+	&:last-child {
+		background: $blue;
 	}
 }
 
