@@ -9,6 +9,10 @@
   	<link rel="shortcut icon" href="/favicon.ico">
   	<link rel="apple-touch-icon" href="/favicon.png">
    	<?php wp_head();?>
+   	<script type="text/javascript">
+   		var homeID = '<?php echo get_option('page_on_front'); ?>';
+   	</script>
+
     <!--[if lt IE 9]>
 	    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -34,7 +38,8 @@
 			<div class="sticky columns large-12" data-sticky data-margin-top="0">
 				<div class="columns large-12 top">
 					<div class="columns large-4 logo">
-						<a ui-sref="pagedetail({id: <?php echo get_option('page_on_front'); ?>})" class="logo-link"> <i class="icon-paramount-icon-logo"></i> <i class="icon-logo"></i> </a>
+						<!-- <a ui-sref="pagedetail({id: <?php echo get_option('page_on_front'); ?>})" class="logo-link"> <i class="icon-paramount-icon-logo"></i> <i class="icon-logo"></i> </a> -->
+						<a ui-sref="home()" class="logo-link"> <i class="icon-paramount-icon-logo"></i> <i class="icon-logo"></i> </a>
 						<a class="header-num" href="tel:8553335336"> <i class="icon-phone"></i> (855) 333-5336</a>
 					</div>
 

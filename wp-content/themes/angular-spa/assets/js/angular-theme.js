@@ -10,6 +10,11 @@ wpApp.factory( 'Pages', function( $resource ) {
 		ID: '@id'
 	})
 });
+wpApp.factory( 'Home', function( $resource ) {
+	return $resource( appInfo.api_url + 'pages/:ID', {
+		ID: '90'
+	})
+});
 
 wpApp.controller( 'ListCtrl', ['$scope', 'Posts', function( $scope, Posts ) {
 	//console.log('ListCtrl');
@@ -30,9 +35,37 @@ wpApp.controller( 'DetailCtrl', ['$scope', '$stateParams', 'Posts', function( $s
 
 wpApp.controller( 'PageDetailCtrl', ['$scope', '$stateParams', 'Pages', function( $scope, $stateParams, Pages ) {
 	console.log( $stateParams );
-	Pages.get( { ID: $stateParams.id}, function(res){
-		$scope.page = res;
-	})
+	console.log( window.location.origin );
+	var url = window.location.href;
+	console.log(url);
+	if (url == 'http://dev.ppg.local/#') {
+		Pages.get( { ID: '90'}, function(res){
+			$scope.page = res;
+		})
+	} else {
+		Pages.get( { ID: $stateParams.id}, function(res){
+			$scope.page = res;
+		})
+	}
+
+}])
+
+wpApp.controller( 'homeDetailCtrl', ['$scope', '$stateParams', 'Home', function( $scope, $stateParams, Home ) {
+	console.log( $stateParams );
+	console.log( window.location.origin );
+	var base_url = window.location.origin+'/#/';
+	var url = window.location.href;
+	console.log(url);
+	if (url == base_url) {
+		Home.get( { ID: '90'}, function(res){
+			$scope.page = res;
+		})
+	} else {
+		Home.get( { ID: '90'}, function(res){
+			$scope.page = res;
+		})
+	}
+
 }])
 
 wpApp.config( function( $stateProvider, $urlRouterProvider){
@@ -40,7 +73,7 @@ wpApp.config( function( $stateProvider, $urlRouterProvider){
 	$stateProvider
 		.state( 'home', {
 			url: '/',
-			controller: 'PageDetailCtrl',
+			controller: 'homeDetailCtrl',
 			templateUrl: appInfo.template_directory + 'templates/page-detail.html'
 		})
 		.state( 'detail', {

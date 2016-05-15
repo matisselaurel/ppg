@@ -47,7 +47,7 @@ var paramountDefault = (function($) {
 			  // this.data   :the data sent, if any ex: foo=bar&a=b (urlencoded)
 			  setTimeout(function(){
 			  	paramountDefault._testimonials();
-			  }, 250);
+			  }, 500);
 
 			}
 
