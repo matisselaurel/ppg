@@ -68,9 +68,9 @@
 	</div>
 	<div data-sticky-container id="stickyheader">
 
-			<div class="sticky columns large-12 medium-12 small-12" data-sticky data-margin-top="0"data-options="sticky_on: small">
-				<div class="columns large-12 top">
-					<div class="columns large-4 medium-10 small-10 logo">
+			<div class="sticky columns large-12 medium-12 small-12 no-padding" data-sticky data-margin-top="0"data-options="sticky_on: small">
+				<div class="columns large-12 top no-padding">
+					<div class="columns large-5 medium-10 small-10 logo">
 						<a ui-sref="home()" class="logo-link"> <i class="icon-paramount-icon-logo"></i> <i class="icon-logo"></i> </a>
 						<a class="header-num show-for-large" href="tel:8553335336"> <i class="icon-phone"></i> (855) 333-5336</a>
 					</div>
@@ -83,7 +83,7 @@
 					<div class="hide-for-large columns medium-2 small-2" data-sticky-container>
 						<div id="header-bar" data-sticky  data-sticky-on="small">
 							<div class="title-bar" data-responsive-toggle="exampleModal9" data-hide-for="large">
-								<button id="mobileNavHam" class="menu-icon fa" type="button" data-toggle></button>
+								<button id="mobileNavHam" class="fa-bars fa" type="button" data-toggle></button>
 								<div class="title-bar-title"></div>
 							</div>
 

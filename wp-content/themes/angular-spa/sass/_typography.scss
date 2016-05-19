@@ -1,6 +1,17 @@
 $fontLoc: 'fonts/';
 
 @font-face {
+  font-family: "foundation-icons";
+  src: url("#{$fontLoc}foundation-icons.eot");
+  src: url("#{$fontLoc}foundation-icons.eot?#iefix") format("embedded-opentype"),
+       url("#{$fontLoc}foundation-icons.woff") format("woff"),
+       url("#{$fontLoc}foundation-icons.ttf") format("truetype"),
+       url("#{$fontLoc}foundation-icons.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Centuma-Thin';
   src:  url('#{$fontLoc}Centuma-Thin.otf')  format('opentype'),
   	url('#{$fontLoc}Centuma-Thin.eot') format('embedded-opentype'),
@@ -21,8 +32,6 @@ $fontLoc: 'fonts/';
   font-weight: normal;
   font-style: normal;
 }
-
-
 
 @font-face {
   font-family: 'Centuma';

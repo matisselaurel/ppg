@@ -981,7 +981,7 @@ select {
   .show-for-medium-only {
     display: none !important; } }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64em) { // 1024px
   .hide-for-large {
     display: none !important; } }
 

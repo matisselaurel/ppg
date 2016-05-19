@@ -20,7 +20,6 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
-
 @import "settings";
 @import "foundationflat";
 @import "typography";
@@ -29,6 +28,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "slick-theme";
 @import "odometer";
 @import "font-awesome";
+
 
 $blue: #144a92;
 $blue-hover: #2883eb;
@@ -344,7 +344,7 @@ a.header-num {
     margin-top: 55px;
     margin-left: 40px;
     float: left;
-    font-size: 14px;
+    font-size: .9vw;
     color: $white;
 }
 
@@ -405,6 +405,9 @@ a.header-num {
 	margin-top: 48px;
 	.no-bullet li {
 		list-style-type: none;
+	}
+	a {
+		padding: 0.7rem 13px;
 	}
 }
 
@@ -554,13 +557,28 @@ a.header-num {
 .testimonials {
 	background: $blue;
 	height: 525px;
-	span.quote {
+	.icon-paramount-icon-logo {
+		color: #124384;
+		font-size: 254px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+	span.fi-quote {
 	    color: white;
-	    font-size: 130px;
-	    line-height: 130px;
+	    font-size: 110px;
+	    line-height: 110px;
 	    display: inline-block;
-	    width: 100%;
+	    width: 3%;
 	    text-align: center;
+	    overflow: hidden;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.header {
 		font-size: 23px;
@@ -683,8 +701,9 @@ a.header-num {
 
 
 	a {
-		font-size: 14px;
+		font-size: .9vw;
 		color: $white;
+		 white-space: nowrap;
 	}
 	ul  li {
 		padding: 15px;
@@ -749,6 +768,12 @@ a.header-num {
 	.footer-main {
 		height: auto;
 	}
+	#mobileNavHam {
+		font-size: 44px;
+		margin-top: 21px;
+		margin-right: -48px;
+		float: right;
+	}
 	#stickyheader {
 		background: $blue;
 		.title-bar {
@@ -791,6 +816,10 @@ a.header-num {
 	    display: inline-block;
 	    margin-left: 18%;
 	}
+	.logo {
+	    padding: 0;
+	    margin-left: -15px;
+	}
 	.logos ul {
 	    width: 100%;
 	    margin: 0 auto;
@@ -827,6 +856,8 @@ a.header-num {
 	    width: 100%;
 	    border: 0;
 	}
+
+
 
 	.approach img {
 	    display: none;
@@ -899,6 +930,11 @@ a.header-num {
 }
 
 @media screen and (max-width: 425px) { //medium break point
+
+	#mobileNavHam {
+		margin-right: 6px;
+	}
+
 
 	.is-stuck .title-bar {
 	    top: 50px;
