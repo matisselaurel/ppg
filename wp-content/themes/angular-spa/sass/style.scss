@@ -34,7 +34,18 @@ $blue: #144a92;
 $blue-hover: #2883eb;
 $white: #fff;
 
+	.reveal.without-overlay {
+			top: 110px !important;
+			background: $blue;
+			a {
+				color: $white;
+			}
+	}
 
+
+.mobile-menu {
+	background: red;
+}
 
 .header .logo-link {
 	color: $white;
@@ -135,6 +146,9 @@ footer {
 .contact-info {
 	span {
 		color: $white;
+		i {
+			color: $blue;
+		}
 	}
 	a {
 		color: $blue;
@@ -172,10 +186,11 @@ footer {
 		font-family: $font-light;
 		font-size: 15px;
 		padding: 0 !important;
+		color: #6d6e70;
 	}
 
 	li {
-		padding: 0 15px;
+		padding: 0 10px;
 		&:first-child {
 			padding-left: 0;
 		}
@@ -189,6 +204,12 @@ footer {
 	    	color: $blue;
 	    	font-size: 30px;
 	    }
+	}
+	ul#menu-legal-links {
+	    margin-top: 15px;
+	}
+	ul.no-bullet {
+		margin-bottom: 0;
 	}
 }
 
@@ -227,7 +248,7 @@ footer {
 	height: 110px;
 	position: relative;
 }
-.sticky {
+.sticky-container {
 	border-bottom: 1px solid white;
 }
 .sticky.is-stuck {
@@ -408,16 +429,14 @@ a.header-num {
     a.button {
     	display: inline-block;
     	border: 1px solid $blue;
-    	padding: 15px 25px;
+    	padding: 20px 25px;
     	font-size: 14px;
     	background: #f6f6f6;
     	color: $blue;
     	text-transform: uppercase;
     	margin-right: 10px;
     	i {
-    		&:before {
-			content: '>>';
-    		}
+
     	}
     }
 }
@@ -535,11 +554,24 @@ a.header-num {
 .testimonials {
 	background: $blue;
 	height: 525px;
+	span.quote {
+	    color: white;
+	    font-size: 130px;
+	    line-height: 130px;
+	    display: inline-block;
+	    width: 100%;
+	    text-align: center;
+	}
 	.header {
 		font-size: 23px;
 		color: $white;
 		text-align: center;
+		width: 100%;
+		    display: inline-block;
+		    height: 50px;
+		    margin-top: 20px;
 	}
+
 	p {
 		font-size: 30px;
 		color: $white;
@@ -550,10 +582,17 @@ a.header-num {
 		width: 100%;
 		text-align: center;
 		display: block;
+		margin-bottom: 70px;
 	}
-
+	span.trust-pilot-logo {
+		img {
+			width: 224px;
+			margin-bottom: 15px;
+		}
+		margin-bottom: 15px;
+	}
 	img {
-		width: 224px;
+		width: 130px;
 		display: block;
 		margin: 0 auto;
 	}
@@ -595,7 +634,7 @@ a.header-num {
     	float: left;
     	text-align: center;
     	width: 173px;
-    	margin-right: 65px;
+    	margin-right: 55px;
     	&:last-child {
     		margin-right: 0;
     	}
@@ -702,4 +741,174 @@ a.header-num {
     margin-bottom: 1em;
     float: left;
     overflow: hidden;
+}
+
+
+
+@media screen and (max-width: 768px) { //medium break point
+	.footer-main {
+		height: auto;
+	}
+	#stickyheader {
+		background: $blue;
+		.title-bar {
+			background: none;
+			padding: 0;
+			border: 0;
+		}
+		.sticky-container {
+			border: 0;
+		}
+		border: 0;
+		.title-bar {
+		    top: 50px;
+		    float: right;
+		    right: 0px;
+		    margin-right: -70px;
+		}
+	}
+	.ls-wp-fullwidth-container {
+	    top: 110px;
+	}
+	.expert {
+		background: $white;
+		a, span {
+			color: $blue;
+		}
+	}
+	.header {
+		height: 431px;
+	}
+	.blog,
+	.customer-service,
+	.footer-links,
+	.legal  {
+		display: none;
+	}
+	ul#menu-legal-links {
+	    margin-top: 75px !important;
+	    width: 70%;
+	    display: inline-block;
+	    margin-left: 18%;
+	}
+	.logos ul {
+	    width: 100%;
+	    margin: 0 auto;
+	    li {
+	    	width: 25%;
+	    	img {
+	    		padding: 0 10%;
+	    	}
+	    	&:last-child,
+	    	&:first-child {
+	    		img {
+	    			height: 50px;
+	    		}
+	    	}
+	    	&:first-child{
+			img {
+				margin: 0 auto;
+				display: block;
+				margin-top: 18%!important;
+			}
+	    	}
+	    }
+	}
+	.testimonials {
+		p {
+			font-family: $font-light;
+			font-size: 26px;
+		}
+
+		height: auto;
+	}
+
+	div#exampleModal9 {
+	    width: 100%;
+	    border: 0;
+	}
+
+	.approach img {
+	    display: none;
+	}
+
+	.approach {
+		.medium-12 {
+			padding: 60px 45px;
+		}
+	}
+
+	.difference a.button {
+		display: block;
+		width: 70%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+
+	.difference {
+		height: auto;
+		padding-bottom: 100px;
+
+	}
+
+
+
+
+	.contact-info {
+		text-align: center;
+	}
+	.columns.large-3.medium-12.small-12.small-pull-12.medium-pull-12.social {
+	    position: absolute;
+	}
+	.legal-links {
+		> .row {
+			position: relative;
+
+			ul {
+				/*bottom: 0;
+				position: absolute;*/
+				li {
+					float: left;
+				}
+			}
+		}
+		ul.no-bullet {
+		    margin: 0 auto;
+		    display: inline-block;
+		    width: 100%;
+		}
+
+		margin-top: 110px;
+
+	}
+	.social li {
+		width: 19%;
+		text-align: center;
+
+		i:before{
+			font-size: 40px;
+		}
+	}
+	small {
+		width: 70%;
+		margin: 0 auto;
+		text-align: center;
+		padding-top: 20px;
+	}
+
+}
+
+@media screen and (max-width: 425px) { //medium break point
+
+	.is-stuck .title-bar {
+	    top: 50px;
+	    float: right;
+	    margin-top: 30px;
+	    right: 0px;
+	    margin-right: -70px;
+	}
+
+	.is-stuck .title-bar {
+		margin-top: 0;
+	}
 }

@@ -1,3 +1,61 @@
+
+<!-- <dv class="columns large-12 testimonials">
+	<div class="large-5 large-centered">
+		<div class="testimonials-slider">
+			 <div>
+				<span class="header">
+				Building Relationships since 2003
+				</span>
+				<p>Working with Stephanie was great, fantastic, excellent… She was knowledgeable, responsive, helped accomplish what was needed, and then some. She was easy to talk to, built a good rapport. Out of a rating of 5 would rate her 6.”</p>
+				<span class="from">The Marshall Family</span>
+				<img src="http://dev.ppg.local/wp-content/themes/angular-spa/images/trust-pilot.png" alt="">
+			</div> -->
+			<!-- <div>
+				<span class="header">
+				Building Relationships since 2003
+				</span>
+				<p>Working with Stephanie was great, fantastic, excellent… She was knowledgeable, responsive, helped accomplish what was needed, and then some. She was easy to talk to, built a good rapport. Out of a rating of 5 would rate her 6.”</p>
+				<span class="from">The Marshall Family</span>
+				<img src="http://dev.ppg.local/wp-content/themes/angular-spa/images/trust-pilot.png" alt="">
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<!-- <div class="columns large-12 customer-service no-padding">
+
+		<h3>We work to build<br> lifelong relationships.</h3>
+		<p>We know that circumstances change and dreams evolve, and we want to be there for you when they do. </p>
+		<a href="" class="button">Our values</a>
+
+		<div class="columns large-12 stats">
+			<div class="columns large-7 large-centered">
+				<ul class="no-bullet">
+					<li>
+						<span class="num ">$<span class="odometer loans">0</span> Billion</span>
+						<i></i>
+						<p>Loans Funded</p>
+					</li>
+					<li>
+						<span class="num "><span class="odometer clients">0 </span>+</span>
+						<i></i>
+						<p>Happy clients</p>
+					</li>
+					<li>
+						<span class="num "><span class="odometer employees">0</span></span>
+						<i></i>
+						<p>Employees</p>
+					</li>
+					<li>
+						<span class="num "><span class="odometer states">0</span></span>
+						<i></i>
+						<p>States Licensed</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<img src="http://dev.ppg.local/wp-content/themes/angular-spa/images/customer-service.jpg" alt="">
+	</div> -->
 <!-- <div class="columns large-12 approach no-padding">
 		<div class="columns large-5 no-padding">
 			<img src="http://dev.ppg.local/wp-content/themes/angular-spa/images/approach-couple.jpg" alt="Happy couple gazing out into the distance">
@@ -91,8 +149,8 @@
 					        </div> -->
 					        <img src="<?php bloginfo('template_directory') ?>/images/logo-footer.png" alt="">
 						<span class="contact-header">CONTACT US</span>
-						<span class="phone"><span>Direct:</span> 916.290.9999</span>
-						<span class="phone"><span>Toll Free:</span> 877.290.9991</span>
+						<span class="phone"><span> <i class="icon-direct-office-icon"></i> Direct:</span> 916.290.9999</span>
+						<span class="phone"><span> <i class="icon-toll-free-phone-icon"></i> Toll Free:</span> 877.290.9991</span>
 						<span class="address">8781 Sierra College Blvd. Roseville, CA 95661</span>
 						<a href="mailto:corporate@paramountequity.com">corporate@paramountequity.com</a>
 
@@ -148,7 +206,7 @@
 			global $legalNavOptions;
 			 wp_nav_menu( $legalNavOptions );
 ?>
-				<div class="columns large-4 social">
+				<div class="columns large-3 medium-12 small-12 small-pull-12 medium-pull-12 social">
 					<ul class="no-bullet">
 						<li><a href=""><i class="icon-facebook"></i></a></li>
 						<li><a href=""><i class="icon-twitter"></i></a></li>
@@ -173,6 +231,6 @@
 		</footer>
     <!-- WP FOOTER -->
   	<?php wp_footer(); ?>
-
+	<input type="hidden" value="0" id="testimonialsData">
 </body>
 </html>

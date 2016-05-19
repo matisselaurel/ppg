@@ -9065,6 +9065,18 @@ table.hover tr:nth-of-type(even):hover {
   clip: auto;
 }
 
+.reveal.without-overlay {
+  top: 110px !important;
+  background: #144a92;
+}
+.reveal.without-overlay a {
+  color: #fff;
+}
+
+.mobile-menu {
+  background: red;
+}
+
 .header .logo-link {
   color: #fff;
 }
@@ -9161,6 +9173,9 @@ footer {
 .contact-info span {
   color: #fff;
 }
+.contact-info span i {
+  color: #144a92;
+}
 .contact-info a {
   color: #144a92;
   font-size: 15px;
@@ -9198,9 +9213,10 @@ footer {
   font-family: "Centuma-Light";
   font-size: 15px;
   padding: 0 !important;
+  color: #6d6e70;
 }
 .legal-links li {
-  padding: 0 15px;
+  padding: 0 10px;
 }
 .legal-links li:first-child {
   padding-left: 0;
@@ -9214,6 +9230,12 @@ footer {
 .legal-links .social li a {
   color: #144a92;
   font-size: 30px;
+}
+.legal-links ul#menu-legal-links {
+  margin-top: 15px;
+}
+.legal-links ul.no-bullet {
+  margin-bottom: 0;
 }
 
 .social-icons li {
@@ -9250,7 +9272,7 @@ footer {
   position: relative;
 }
 
-.sticky {
+.sticky-container {
   border-bottom: 1px solid white;
 }
 
@@ -9425,15 +9447,12 @@ a.header-num {
 .difference a.button {
   display: inline-block;
   border: 1px solid #144a92;
-  padding: 15px 25px;
+  padding: 20px 25px;
   font-size: 14px;
   background: #f6f6f6;
   color: #144a92;
   text-transform: uppercase;
   margin-right: 10px;
-}
-.difference a.button i:before {
-  content: '>>';
 }
 
 .approach {
@@ -9542,10 +9561,22 @@ a.header-num {
   background: #144a92;
   height: 525px;
 }
+.testimonials span.quote {
+  color: white;
+  font-size: 130px;
+  line-height: 130px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
 .testimonials .header {
   font-size: 23px;
   color: #fff;
   text-align: center;
+  width: 100%;
+  display: inline-block;
+  height: 50px;
+  margin-top: 20px;
 }
 .testimonials p {
   font-size: 30px;
@@ -9557,9 +9588,17 @@ a.header-num {
   width: 100%;
   text-align: center;
   display: block;
+  margin-bottom: 70px;
+}
+.testimonials span.trust-pilot-logo {
+  margin-bottom: 15px;
+}
+.testimonials span.trust-pilot-logo img {
+  width: 224px;
+  margin-bottom: 15px;
 }
 .testimonials img {
-  width: 224px;
+  width: 130px;
   display: block;
   margin: 0 auto;
 }
@@ -9598,7 +9637,7 @@ a.header-num {
   float: left;
   text-align: center;
   width: 173px;
-  margin-right: 65px;
+  margin-right: 55px;
 }
 .customer-service li:last-child {
   margin-right: 0;
@@ -9703,4 +9742,165 @@ a.header-num {
   margin-bottom: 1em;
   float: left;
   overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-main {
+    height: auto;
+  }
+
+  #stickyheader {
+    background: #144a92;
+    border: 0;
+  }
+  #stickyheader .title-bar {
+    background: none;
+    padding: 0;
+    border: 0;
+  }
+  #stickyheader .sticky-container {
+    border: 0;
+  }
+  #stickyheader .title-bar {
+    top: 50px;
+    float: right;
+    right: 0px;
+    margin-right: -70px;
+  }
+
+  .ls-wp-fullwidth-container {
+    top: 110px;
+  }
+
+  .expert {
+    background: #fff;
+  }
+  .expert a, .expert span {
+    color: #144a92;
+  }
+
+  .header {
+    height: 431px;
+  }
+
+  .blog,
+  .customer-service,
+  .footer-links,
+  .legal {
+    display: none;
+  }
+
+  ul#menu-legal-links {
+    margin-top: 75px !important;
+    width: 70%;
+    display: inline-block;
+    margin-left: 18%;
+  }
+
+  .logos ul {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .logos ul li {
+    width: 25%;
+  }
+  .logos ul li img {
+    padding: 0 10%;
+  }
+  .logos ul li:last-child img, .logos ul li:first-child img {
+    height: 50px;
+  }
+  .logos ul li:first-child img {
+    margin: 0 auto;
+    display: block;
+    margin-top: 18% !important;
+  }
+
+  .testimonials {
+    height: auto;
+  }
+  .testimonials p {
+    font-family: "Centuma-Light";
+    font-size: 26px;
+  }
+
+  div#exampleModal9 {
+    width: 100%;
+    border: 0;
+  }
+
+  .approach img {
+    display: none;
+  }
+
+  .approach .medium-12 {
+    padding: 60px 45px;
+  }
+
+  .difference a.button {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .difference {
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .columns.large-3.medium-12.small-12.small-pull-12.medium-pull-12.social {
+    position: absolute;
+  }
+
+  .legal-links {
+    margin-top: 110px;
+  }
+  .legal-links > .row {
+    position: relative;
+  }
+  .legal-links > .row ul {
+    /*bottom: 0;
+    position: absolute;*/
+  }
+  .legal-links > .row ul li {
+    float: left;
+  }
+  .legal-links ul.no-bullet {
+    margin: 0 auto;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .social li {
+    width: 19%;
+    text-align: center;
+  }
+  .social li i:before {
+    font-size: 40px;
+  }
+
+  small {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .is-stuck .title-bar {
+    top: 50px;
+    float: right;
+    margin-top: 30px;
+    right: 0px;
+    margin-right: -70px;
+  }
+
+  .is-stuck .title-bar {
+    margin-top: 0;
+  }
 }
