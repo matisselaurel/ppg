@@ -7139,7 +7139,7 @@ table.hover tr:nth-of-type(even):hover {
 }
 .slick-prev:before,
 .slick-next:before {
-  font-family: "slick";
+  font-family: FontAwesome;
   font-size: 20px;
   line-height: 1;
   color: #989898;
@@ -7156,10 +7156,10 @@ table.hover tr:nth-of-type(even):hover {
   right: -25px;
 }
 .slick-prev:before {
-  content: "<";
+  content: "";
 }
 [dir="rtl"] .slick-prev:before {
-  content: ">";
+  content: "";
 }
 
 .slick-next {
@@ -7170,10 +7170,10 @@ table.hover tr:nth-of-type(even):hover {
   right: auto;
 }
 .slick-next:before {
-  content: ">";
+  content: "";
 }
 [dir="rtl"] .slick-next:before {
-  content: "<";
+  content: "";
 }
 
 /* Dots */
@@ -10691,9 +10691,9 @@ a.header-num {
   height: 240px;
 }
 .blog .forward-thinking-slider .slick-arrow {
-  border: 1px solid #989898;
-  padding: 6px 9px;
-  border-radius: 15px;
+  border: 2px solid #989898;
+  padding: 7px 14px;
+  border-radius: 22px;
 }
 .blog .forward-thinking-slider .slick-list {
   height: 240px;
@@ -10719,13 +10719,14 @@ a.header-num {
 }
 .testimonials .icon-paramount-icon-logo {
   color: #124384;
-  font-size: 254px;
+  font-size: 385px;
   position: absolute;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 19%;
+  padding-top: 25px;
 }
 .testimonials span.fi-quote {
   color: white;
@@ -10922,10 +10923,14 @@ a.header-num {
     height: auto;
   }
 
+  #stickyheader > .is-stuck.columns #mobileNavHam {
+    margin-top: -12px;
+  }
+
   #mobileNavHam {
     font-size: 44px;
     margin-top: 21px;
-    margin-right: -48px;
+    margin-right: -28px;
     float: right;
   }
 
@@ -10979,7 +10984,7 @@ a.header-num {
 
   .logo {
     padding: 0;
-    margin-left: -15px;
+    margin-left: 15px;
   }
 
   .logos ul {
@@ -11078,7 +11083,11 @@ a.header-num {
 }
 @media screen and (max-width: 425px) {
   #mobileNavHam {
-    margin-right: 6px;
+    margin-right: 30px;
+  }
+
+  .icon-paramount-icon-logo {
+    width: 95%;
   }
 
   .is-stuck .title-bar {
