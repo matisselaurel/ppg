@@ -54,7 +54,7 @@
 </div>
 
 
-<header class="header" id="header" style="background: blue;">
+<header class="header" id="header">
 
 
 
@@ -62,7 +62,7 @@
 	<!-- <img src="<?php bloginfo('template_url'); ?>/images/home-banner.jpg" alt=""> -->
 	<div class="row">
 		<div class="columns large-12 ">
-			<?php //layerslider(1, 'homepage'); ?>
+			<?php layerslider(1, 'homepage'); ?>
 		</div>
 
 	</div>
