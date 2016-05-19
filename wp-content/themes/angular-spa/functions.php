@@ -340,7 +340,8 @@ function register_footer_menu() {
 add_action( 'init', 'register_footer_menu' );
 
 function loadParamountJs() {
-    echo '<script type="text/javascript" src="http://dev.ppg.local/wp-content/themes/angular-spa/assets/js/paramountDefault.js"></script>';
+	$template = get_stylesheet_directory_uri();
+    echo '<script type="text/javascript" src="'. $template .'/assets/js/paramountDefault.js"></script>';
 }
 
 function loadSlick() {
