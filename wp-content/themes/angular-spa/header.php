@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
     <base href="/">
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class('hide'); ?>>
 <div class="reveal hide-for-large" id="exampleModal9" data-reveal data-overlay="false" data-v-offset="110">
 
 

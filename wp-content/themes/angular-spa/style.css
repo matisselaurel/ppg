@@ -10242,6 +10242,10 @@ table.hover tr:nth-of-type(even):hover {
 .testimonials-slider .slick-slide {
   width: 570px;
   text-align: center;
+  margin-top: 110px;
+}
+.testimonials-slider .slick-slide p {
+  font-family: "Centuma-Light";
 }
 
 body * {
@@ -10622,7 +10626,7 @@ a.header-num {
   font-family: "Centuma-Bold";
 }
 .approach .large-7 {
-  padding: 60px 0 0 70px;
+  padding: 1.9% 2%;
 }
 .approach .large-7 > p {
   font-size: 20px;
@@ -10715,7 +10719,7 @@ a.header-num {
 
 .testimonials {
   background: #144a92;
-  height: 525px;
+  /*height: 525px;*/
 }
 .testimonials .icon-paramount-icon-logo {
   color: #124384;
@@ -10726,7 +10730,7 @@ a.header-num {
   margin-left: auto;
   margin-right: auto;
   width: 19%;
-  padding-top: 25px;
+  padding-top: 30px;
 }
 .testimonials span.fi-quote {
   color: white;
@@ -10741,6 +10745,7 @@ a.header-num {
   right: 0;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 30px;
 }
 .testimonials .header {
   font-size: 23px;
@@ -10750,6 +10755,8 @@ a.header-num {
   display: inline-block;
   height: 50px;
   margin-top: 20px;
+  font-family: "Centuma-Bold";
+  text-transform: capitalize;
 }
 .testimonials p {
   font-size: 30px;
@@ -10777,16 +10784,17 @@ a.header-num {
 }
 
 .customer-service {
-  height: 610px;
+  /*height: 610px;*/
   position: relative;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .customer-service h3, .customer-service p, .customer-service a {
   left: 5%;
 }
 .customer-service h3 {
-  font-size: 80px;
-  font-family: "Centuma-Light";
+  font-size: 4vw;
+  font-family: "Centuma-Thin";
+  padding-top: 50px;
 }
 .customer-service p {
   font-size: 30px;
@@ -10803,21 +10811,21 @@ a.header-num {
 }
 .customer-service .stats [class^="icon-"], .customer-service .stats [class*=" icon-"] {
   display: block;
-  font-size: 50px !important;
+  font-size: 4vw !important;
   margin-bottom: 20px;
 }
 .customer-service li {
   float: left;
   text-align: center;
-  width: 173px;
-  margin-right: 55px;
+  width: 13vw;
+  margin-right: 3vw;
 }
 .customer-service li:last-child {
   margin-right: 0;
 }
 .customer-service li span {
   font-family: "Centuma-Light";
-  font-size: 30px;
+  font-size: 2vw;
 }
 .customer-service li i {
   border-top: 2px solid #144a92;
@@ -10828,7 +10836,7 @@ a.header-num {
 }
 .customer-service li p {
   font-family: "Centuma-Bold";
-  font-size: 24px;
+  font-size: 1.6vw;
 }
 .customer-service img {
   position: absolute;

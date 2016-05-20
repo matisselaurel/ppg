@@ -57,7 +57,9 @@ var paramountDefault = (function($) {
 
 				$('nav li a').on('click', function () {
 					$('.testimonials-slider').slick('unslick');
-				});22
+				});
+
+				$('body').removeClass('hide');
 			});
 
 			// XHR listener
@@ -135,7 +137,10 @@ var paramountDefault = (function($) {
 				slidesToShow: 1,
   				slidesToScroll: 1,
 				arrows: false,
-				autoplay: true
+				autoplay: true,
+				speed: 500,
+				  fade: true,
+				  cssEase: 'linear'
 			});
 		},
 		_trustPilot: function(data, slick, firstCall) {
