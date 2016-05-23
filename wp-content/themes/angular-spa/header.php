@@ -20,6 +20,12 @@
     <base href="/">
 </head>
 <body <?php body_class('hide'); ?>>
+
+
+
+
+
+
 <div class="reveal hide-for-large" id="exampleModal9" data-reveal data-overlay="false" data-v-offset="110">
 
 
@@ -54,18 +60,16 @@
 </div>
 
 
+
 <header class="header" id="header">
 
 
 
-
 	<!-- <img src="<?php bloginfo('template_url'); ?>/images/home-banner.jpg" alt=""> -->
-	<div class="row">
-		<div class="columns large-12 ">
-			<?php layerslider(1, 'homepage'); ?>
-		</div>
 
-	</div>
+
+
+
 	<div data-sticky-container id="stickyheader">
 
 			<div class="sticky columns large-12 medium-12 small-12 no-padding" data-sticky data-margin-top="0"data-options="sticky_on: small">
@@ -95,6 +99,9 @@
 
 	</div>
 
+
+
+
 	<!-- <div class="slick-slide">
 		<h1>Thinking Forward To <br> Make You Feel at Home</h1>
 		<a class="button" href="">Our Mission</a>
@@ -103,7 +110,15 @@
 </header>
 
 
+<!--  -->
+<!--  -->
 
+<div class="top-section">
+	<?php layerslider(1, 'homepage'); ?>
+	  <!-- <p>This content takes up 100% of the viewport at the top</p>
+	  <a href="#" class="more">Learn More</a> -->
+</div>
+<!-- <div class="bottom-section">  <p>This is the body content, and should appear just after the top section <strong>only when you scroll down</strong>.</p></div> -->
 
 
 <!--  -->

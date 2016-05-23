@@ -10431,6 +10431,9 @@ footer {
 
 .sticky-container {
   border-bottom: 1px solid white;
+  /*position: absolute;
+  top: 0;
+  width: 100%;*/
 }
 
 .sticky.is-stuck {
@@ -10453,9 +10456,13 @@ footer {
 }
 
 .header {
-  height: 617px;
   position: relative;
-  overflow: hidden;
+  z-index: 5;
+  height: 100%;
+}
+
+img.ls-bg:root {
+  background: yellow !important;
 }
 
 .header > img,
@@ -10804,7 +10811,7 @@ a.header-num {
   background: #144a92;
 }
 .customer-service .stats {
-  position: absolute;
+  /*position: absolute;*/
   bottom: 0;
   padding: 40px 0 0 0;
   background: rgba(36, 36, 36, 0.9);
@@ -11109,4 +11116,57 @@ a.header-num {
   .is-stuck .title-bar {
     margin-top: 0;
   }
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  color: #333;
+  /*text-shadow: #fff 0px 1px 0px;*/
+  font-family: "Myriad Pro", sans-serif;
+}
+
+p {
+  font-size: 2em;
+  text-align: center;
+}
+
+.top-section {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.more {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+}
+
+.top-section > div[style],
+.top-section > div[style] > div[style],
+.top-section > div[style] > div[style] > div[style],
+.top-section > div[style] > div[style] > div[style] .ls-active img {
+  height: 100% !important;
+  /*    width: auto!important;
+      top: 0;*/
+}
+
+.top-section > div[style] > div[style] > div[style] img {
+  /* Set rules to fill background */
+  min-height: 100% !important;
+  min-width: 1024px !important;
+  /* Set up proportionate scaling */
+  width: 100% !important;
+  height: auto !important;
+  /* Set up positioning */
+  position: absolute !important;
+  z-index: 0 !important;
+  top: 0 !important;
+  left: 0 !important;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
 }
